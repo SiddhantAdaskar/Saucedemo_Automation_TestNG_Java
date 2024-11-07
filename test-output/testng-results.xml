@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="13" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-07T11:29:41 IST" name="Suite" finished-at="2024-11-07T11:31:53 IST" duration-ms="132266">
+    <groups>
+    </groups>
+    <test started-at="2024-11-07T11:29:41 IST" name="DemoTest" finished-at="2024-11-07T11:31:53 IST" duration-ms="132266">
+      <class name="testScripts.FinishPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testScripts.FinishPageTest@7c9d8e2]" started-at="2024-11-07T11:31:30 IST" name="setup" finished-at="2024-11-07T11:31:37 IST" duration-ms="6596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyFinishBtn()[pri:0, instance:testScripts.FinishPageTest@7c9d8e2]" started-at="2024-11-07T11:31:37 IST" name="verifyFinishBtn" finished-at="2024-11-07T11:31:43 IST" duration-ms="5952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFinishBtn -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testScripts.FinishPageTest@7c9d8e2]" started-at="2024-11-07T11:31:43 IST" name="teardown" finished-at="2024-11-07T11:31:43 IST" duration-ms="575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testScripts.FinishPageTest -->
+      <class name="testScripts.CheckoutPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testScripts.CheckoutPageTest@70325e14]" started-at="2024-11-07T11:30:52 IST" name="setup" finished-at="2024-11-07T11:30:58 IST" duration-ms="6129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Verify_CheckOut_With_Valid_Credentials(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testScripts.CheckoutPageTest@70325e14]" started-at="2024-11-07T11:30:58 IST" name="Verify_CheckOut_With_Valid_Credentials" data-provider="valid_chekout_credentials" finished-at="2024-11-07T11:31:02 IST" duration-ms="3944" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[siddhant]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[adaskar]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[412105]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_CheckOut_With_Valid_Credentials -->
+        <test-method signature="Verify_CheckOut_With_empty_firstname(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testScripts.CheckoutPageTest@70325e14]" started-at="2024-11-07T11:31:02 IST" name="Verify_CheckOut_With_empty_firstname" data-provider="invalid_chekout_credentials_1" finished-at="2024-11-07T11:31:10 IST" duration-ms="8404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[adaskar]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[412105]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_CheckOut_With_empty_firstname -->
+        <test-method signature="Verify_CheckOut_With_invalid_postalcode(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testScripts.CheckoutPageTest@70325e14]" started-at="2024-11-07T11:31:10 IST" name="Verify_CheckOut_With_invalid_postalcode" data-provider="invalid_chekout_credentials_2" finished-at="2024-11-07T11:31:21 IST" duration-ms="10756" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[siddhant]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[adaskar]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Alandi road]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at testScripts.CheckoutPageTest.Verify_CheckOut_With_invalid_postalcode(CheckoutPageTest.java:94)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_CheckOut_With_invalid_postalcode -->
+        <test-method signature="Verify_CheckOut_With_empty_postalcode(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:testScripts.CheckoutPageTest@70325e14]" started-at="2024-11-07T11:31:21 IST" name="Verify_CheckOut_With_empty_postalcode" data-provider="invalid_chekout_credentials_3" finished-at="2024-11-07T11:31:30 IST" duration-ms="8510" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[siddhant]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[adaskar]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_CheckOut_With_empty_postalcode -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testScripts.CheckoutPageTest@70325e14]" started-at="2024-11-07T11:31:30 IST" name="teardown" finished-at="2024-11-07T11:31:30 IST" duration-ms="510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testScripts.CheckoutPageTest -->
+      <class name="testScripts.CartPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testScripts.CartPageTest@38afe297]" started-at="2024-11-07T11:30:29 IST" name="setup" finished-at="2024-11-07T11:30:33 IST" duration-ms="4802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VerifyCheckoutBtnClicable()[pri:0, instance:testScripts.CartPageTest@38afe297]" started-at="2024-11-07T11:30:33 IST" name="VerifyCheckoutBtnClicable" finished-at="2024-11-07T11:30:36 IST" duration-ms="2926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCheckoutBtnClicable -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testScripts.CartPageTest@38afe297]" started-at="2024-11-07T11:30:36 IST" name="teardown" finished-at="2024-11-07T11:30:37 IST" duration-ms="358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testScripts.CartPageTest -->
+      <class name="testScripts.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testScripts.LoginTest@d35dea7]" started-at="2024-11-07T11:29:41 IST" name="setup" finished-at="2024-11-07T11:29:47 IST" duration-ms="6642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Verify_valid_Login_Functionality(java.lang.String,java.lang.String)[pri:1, instance:testScripts.LoginTest@d35dea7]" started-at="2024-11-07T11:29:47 IST" name="Verify_valid_Login_Functionality" data-provider="valid_Test_login_credentials" finished-at="2024-11-07T11:29:52 IST" duration-ms="4646" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_valid_Login_Functionality -->
+        <test-method signature="Verify_Invalid_Login_Functionality(java.lang.String,java.lang.String)[pri:2, instance:testScripts.LoginTest@d35dea7]" started-at="2024-11-07T11:29:52 IST" name="Verify_Invalid_Login_Functionality" data-provider="Invalid_Test_login_credentials" finished-at="2024-11-07T11:30:04 IST" duration-ms="11473" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Invalid_Login_Functionality -->
+        <test-method signature="Verify_Invalid_Login_Functionality(java.lang.String,java.lang.String)[pri:2, instance:testScripts.LoginTest@d35dea7]" started-at="2024-11-07T11:30:04 IST" name="Verify_Invalid_Login_Functionality" data-provider="Invalid_Test_login_credentials" finished-at="2024-11-07T11:30:12 IST" duration-ms="8351" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_users]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Invalid_Login_Functionality -->
+        <test-method signature="Verify_Login_with_empty_username(java.lang.String,java.lang.String)[pri:3, instance:testScripts.LoginTest@d35dea7]" started-at="2024-11-07T11:30:12 IST" name="Verify_Login_with_empty_username" data-provider="Empty_username_login_credentials" finished-at="2024-11-07T11:30:20 IST" duration-ms="8351" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Login_with_empty_username -->
+        <test-method signature="Verify_Login_with_empty_password(java.lang.String,java.lang.String)[pri:4, instance:testScripts.LoginTest@d35dea7]" started-at="2024-11-07T11:30:20 IST" name="Verify_Login_with_empty_password" data-provider="Empty_password_login_credentials" finished-at="2024-11-07T11:30:28 IST" duration-ms="7479" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_users]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Login_with_empty_password -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testScripts.LoginTest@d35dea7]" started-at="2024-11-07T11:30:28 IST" name="teardown" finished-at="2024-11-07T11:30:29 IST" duration-ms="777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testScripts.LoginTest -->
+      <class name="testScripts.InventoryPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testScripts.InventoryPageTest@2df3b89c]" started-at="2024-11-07T11:30:37 IST" name="setup" finished-at="2024-11-07T11:30:42 IST" duration-ms="5590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyCarytbtnClicable()[pri:1, instance:testScripts.InventoryPageTest@2df3b89c]" started-at="2024-11-07T11:30:42 IST" name="verifyCarytbtnClicable" finished-at="2024-11-07T11:30:49 IST" duration-ms="7037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCarytbtnClicable -->
+        <test-method signature="VerifyCartContainer()[pri:2, instance:testScripts.InventoryPageTest@2df3b89c]" started-at="2024-11-07T11:30:49 IST" name="VerifyCartContainer" finished-at="2024-11-07T11:30:51 IST" duration-ms="2206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCartContainer -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testScripts.InventoryPageTest@2df3b89c]" started-at="2024-11-07T11:30:51 IST" name="teardown" finished-at="2024-11-07T11:30:52 IST" duration-ms="555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testScripts.InventoryPageTest -->
+      <class name="testScripts.LogoutPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testScripts.LogoutPageTest@6200f9cb]" started-at="2024-11-07T11:31:43 IST" name="setup" finished-at="2024-11-07T11:31:48 IST" duration-ms="4413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogout()[pri:0, instance:testScripts.LogoutPageTest@6200f9cb]" started-at="2024-11-07T11:31:48 IST" name="verifyLogout" finished-at="2024-11-07T11:31:53 IST" duration-ms="4755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogout -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testScripts.LogoutPageTest@6200f9cb]" started-at="2024-11-07T11:31:53 IST" name="teardown" finished-at="2024-11-07T11:31:53 IST" duration-ms="394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testScripts.LogoutPageTest -->
+    </test> <!-- DemoTest -->
+  </suite> <!-- Suite -->
+</testng-results>
